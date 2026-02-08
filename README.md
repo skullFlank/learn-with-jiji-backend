@@ -28,6 +28,8 @@ Accepts a user query and returns an explanation with related learning resources.
   "question": "Explain RAG"
 }
 
+---
+
 **Response**
 ```json
 {
@@ -45,3 +47,12 @@ Accepts a user query and returns an explanation with related learning resources.
     }
   ]
 }
+---
+## Database Structure (Supabase)
+
+The backend uses Supabase as the database and authentication layer.
+
+Tables used:
+- **profiles** – Stores basic user information linked with Supabase Auth  
+- **queries** – Stores user-submitted questions  
+- **resources** – Stores learning resources such as PPT and video links  
